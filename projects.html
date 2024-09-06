@@ -1,0 +1,134 @@
+<!--
+
+   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/assignment1.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Jiahao Xu</div>
+
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="resume.html" onclick="toggleMenu()">Resume</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="projects">
+      <h1 class="title">My Projects</h1>
+      <div class="project">
+        <img class="project_picture" src="img/brick.png" alt="brick checker">
+        <div class="project_description">
+          <h3>Brick Checker</h3>
+          <p>Java Project to Test Brick Dimension Requirements</p>
+          <br><br>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Analyzed the requirement and documented the four UML Class diagrams.</li>
+            <li>Created pseudocode and flow-charts for the key methods using UML.</li>
+            <li>Designed the manual test plan with simple inputs to ensure the algorithm works well.</li>
+            <li>Wrote and submitted the design proposal including class diagrams, pseudocode, flow-charts, and test
+              report.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <img class="project_picture" src="img/db1.png" alt="database">
+        <div class="project_description">
+          <h3>ABC Airline DBMS</h3>
+          <p>Database system for airplane company operations and management</p>
+          <br><br>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Analyzed the database structure and meticulously designed the database schema, incorporating tables and
+              constraints
+              using DDL commands.</li>
+            <li>Implemented functional test data generated with an online tool to ensure robust database performance and
+              data integrity.</li>
+            <li>Conducted a comprehensive series of test queries to showcase subsets of columns, executed table joins,
+              and performed
+              aggregates to validate database functionality.</li>
+            <li>Developed 4 dynamic views to streamline complex queries and enhance data abstraction, ensuring optimized
+              data management
+              and accessibility.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project_picture" src="img/toolrental.png" alt="tool rental">
+        <div class="project_description">
+          <h3>Tool rental database project</h3>
+          <p>Seamlessly integrated Access frontend with SQL Server backend for efficient tool rental operations.</p>
+          <br>
+          <p><strong>Project Details:</strong></p>
+
+          <ul>
+
+            <li>Developed a seamless integration using ODBC to link Access frontend with SQL Server backend,
+              facilitating efficient data
+              management for tool rental operations.</li>
+            <li>Utilized SQL queries to generate comprehensive business reports from the SQL Server database, providing
+              critical
+              insights into tool rental operations. </li>
+            <li>Ensured robust data handling and reporting capabilities by leveraging SQL Server's powerful backend
+              while maintaining
+              user-friendly interactions through Access frontend.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project_picture" src="img/location.jpg" alt="database image 1">
+        <div class="project_description">
+          <h3>Postal Code Distance Calculator</h3>
+          <p>Calculate Distance by Postal Code</p><br><br>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Developed a Java application to calculate distances between locations based on postal code prefixes.
+            </li>
+            <li>Implemented using object-oriented principles, including class design and method implementation for
+              distance calculation.</li>
+            <li>Utilized arrays and loops to handle multiple locations efficiently.</li>
+            <li>Validated functionality through rigorous testing using JUnit5 framework for both valid and invalid data
+              scenarios.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-buttons">
+      <button class="scroll-button" id="scrollUp">PREVIOUS</button>
+      <button class="scroll-button" id="scrollDown">NEXT</button>
+    </div>
+  </main>
+</body>
+
+</html>

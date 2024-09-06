@@ -1,0 +1,408 @@
+ /* 
+Name: Jiahao Xu File 
+Name: index.html 
+Date: 2024-07-08 
+Section: CST-8285-313 
+Purpose: assignment1 
+*/
+ /*Basic Reset */
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ /* Body Styling */
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background: #9fac68af;
+ }
+
+ /* Header Styling */
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+   padding: 10px;
+ }
+
+ /* Logo Styling */
+ .logo {
+   flex: 1;
+   text-align: left;
+   font-size: 45px;
+   font-style: inherit;
+   color: #0f0f0f;
+ }
+
+ /* Navigation Links Styling */
+ .nav-links,
+ .menu-links {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+
+ }
+
+ .menu-links.active {
+   display: flex;
+   /* Show menu when active */
+   flex-direction: column;
+   /* Other styles for active state (position, etc.) */
+ }
+
+ .nav-links li,
+ .menu-links li {
+   margin-left: 20px;
+   margin-right: 20px;
+
+ }
+
+ .nav-links a,
+ .menu-links a {
+   color: #0a0a0a;
+   text-decoration: none;
+ }
+
+ /* Hamburger Menu Styling */
+ .hamburger-menu {
+   display: none;
+ }
+
+ .hamburger-icon {
+   cursor: pointer;
+ }
+
+ .hamburger-icon span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px 0;
+   background-color: white;
+ }
+
+ /* Section Styling */
+ #index_title {
+   text-align: center;
+ }
+
+ .section-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 20px;
+ }
+
+ .section__text__p1 {
+
+   font-size: medium;
+   font-style: inherit;
+   text-align: center;
+
+ }
+
+
+
+ .section__pic-container {
+   flex: 1;
+   max-width: 300px;
+ }
+
+ .about-pic {
+   width: 110%;
+   height: auto;
+   border-radius: 50%;
+ }
+
+ .about-details-container {
+   flex: 2;
+   padding: 20px;
+   margin-left: 15px;
+ }
+
+ .text-container {
+   padding: 10px;
+ }
+
+ /* Footer Styling */
+ footer p {
+   text-align: center;
+ }
+
+ /* Resume Section Styling */
+ .resume-container {
+   background: #9fac68af;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin: 20px 0;
+ }
+
+ .resume-container h2,
+ .resume-container h3,
+ .resume-container h4 {
+   margin-top: 20px;
+   color: #333;
+ }
+
+ .resume-container p,
+ .resume-container ul {
+   margin: 10px 0;
+   color: #000000;
+ }
+
+ .resume-container ul {
+   list-style-type: disc;
+   padding-left: 20px;
+ }
+
+ .resume-container a {
+   color: #333;
+   text-decoration: none;
+ }
+
+ .resume-container a:hover {
+   text-decoration: underline;
+ }
+
+
+
+ /* Education and Work Sections */
+ .education-section,
+ .work-section {
+   margin-bottom: 20px;
+ }
+
+ .date {
+   float: right;
+   font-style: italic;
+   color: #000000;
+ }
+
+
+
+
+
+
+
+
+
+ /* projects section  */
+ /* CSS for projects section */
+
+ /* Basic styling */
+
+ .project {
+   display: flex;
+   /* Use flex layout */
+   margin: 10px auto;
+   /* Center and set margin */
+   width: 85vw;
+   height: 80vh;
+   border: 1px solid black;
+ }
+
+ .project img {
+   max-width: 400px;
+   height: auto;
+   /* Ensure image height adjusts proportionally */
+   margin-block: auto;
+   border-radius: 25%;
+ }
+
+ .project_description {
+   width: 35vw;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   margin-left: 70px;
+   margin-top: 50px;
+ }
+
+ .projects .project {
+   display: none;
+ }
+
+ .projects .project.active {
+   display: flex;
+   margin-bottom: 15px;
+   border: none;
+   width: 65vw;
+ }
+
+ .carousel-container {
+   max-width: 800px;
+   margin: 20px auto;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .scroll-buttons {
+   position: relative;
+   /* Ensure relative positioning */
+   bottom: 10px;
+   /* Adjust bottom position */
+   left: 50%;
+   /* Center horizontally */
+   transform: translateX(-50%);
+   /* Offset to center horizontally */
+   font-size: 18px;
+ }
+
+ #scrollUp,
+ #scrollDown {
+   position: fixed;
+   bottom: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   color: #007bff;
+   width: 100px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   background-color: white;
+   z-index: 1000;
+ }
+
+ #scrollUp {
+   left: 29%;
+   transform: translateX(-150%);
+ }
+
+ #scrollDown {
+   right: 64%;
+   transform: translateX(150%);
+ }
+
+
+ /* contact me */
+ #contact_form {
+   width: 700px;
+   margin-left: 471px;
+   margin-top: 20px;
+   margin-bottom: 59px;
+   display: block;
+   align-items: center;
+ }
+
+
+
+ .form_content {
+   margin-top: 30px;
+   margin-left: 5px;
+ }
+
+ .form_fieldset {
+   border: none;
+   align-items: center;
+   margin: 5px;
+   margin-bottom: 30px;
+ }
+
+ .form label {
+   display: block;
+   margin-bottom: 15px;
+ }
+
+ .required {
+   content: '*';
+   color: red;
+   margin-left: 5px
+ }
+
+ legend {
+   font-size: x-large;
+   font-style: italic;
+   color: rgb(204, 75, 29);
+ }
+
+ #submit_form {
+   border: none;
+   border-radius: 5px;
+   width: 100px;
+   height: 25px;
+   background: #9ea2ab;
+ }
+
+
+ /* Responsive Styling */
+ @media (max-width: 768px) {
+   .nav-links {
+     display: none;
+   }
+
+   .hamburger-menu {
+     display: block;
+   }
+
+   .menu-links {
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     right: 10px;
+     background-color: rgb(247, 234, 236);
+     padding: 10px;
+     border-radius: 5px;
+   }
+
+   .menu-links li {
+     margin: 10px 0;
+   }
+
+   .section-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center
+   }
+
+   .title {
+     text-align: center;
+     font-weight: bold;
+     font-size: 2em;
+     margin-bottom: 20px;
+   }
+
+   .about-details-container {
+     padding: 10px 0;
+   }
+
+   .resume-container {
+     margin: 0 auto;
+   }
+
+   .project_picture {
+     width: 55vw;
+   }
+
+   .project {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .button-container {
+     position: static;
+     margin-top: 20px;
+     justify-content: space-between;
+   }
+
+   #scrollUp,
+   #scrollDown {
+     width: 48%;
+   }
+
+   #contact_form {
+     width: 55vw;
+     margin: 20px auto;
+   }
+
+   #message {
+     width: 55vw;
+   }
+ }

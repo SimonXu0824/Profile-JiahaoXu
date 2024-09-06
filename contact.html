@@ -1,0 +1,73 @@
+<!--
+ 
+   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jiahao Xu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/assignment1.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo"> Jiahao Xu</div>
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="resume.html" onclick="toggleMenu()">Resume</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Me</h2> <!-- Adding a heading for semantic structure -->
+      <div class="section-container">
+        <form id="contact_form" action="submit_form.php" method="POST">
+          <fieldset class="form_fieldset">
+            <legend>Contact Me</legend><br><br>
+
+            <label class="form_content" for="name">Name:<span class="required">*</span></label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label class="form_content" for="email">Email:<span class="required">*</span></label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label class="form_content" for="tel">Tel:<span class="required">*</span></label><br>
+            <input type="tel" id="tel" name="tel" required><br>
+
+            <label class="form_content" for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+            <input id="submit_form" type="submit" value="Submit">
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2023 Jiahao Xu. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
